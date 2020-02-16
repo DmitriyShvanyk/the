@@ -1,0 +1,98 @@
+<!--modalReg.begin-->
+<div class="modal" id="modalReg">
+  <div class="modal__inner">
+    <div class="modal__head">
+      <h2 class="title modal__title">
+        <a data-fancybox-close class="modal__close">Close me</a>
+        Регистрация
+      </h2>
+      <p class="modal__text">Создайте аккаунт для просмотра уроков курса "Макияж для себя за 10 минут в день".
+        Заполните поля ниже для
+        продолжения.</p>
+    </div>
+    <div class="modal__body">
+      <div id="formRegTarget"></div>
+      <form class="form" id="formReg" action="#" method="POST">
+        <div class="form__step" id="form-step-1">
+          <div class="form__head">
+            <div class="form__item form__item--email">
+              <label class="form__label">
+                <input type="email" name="email" class="form__control">
+                <span class="form__label-text">Электронная почта</span>
+              </label>
+            </div>
+            <div class="form__item form__item--tel">
+              <label class="form__label form__label--tel">
+                <input type="tel" id="tel" name="tel" class="form__control form__control--tel"
+                  placeholder="+7 (___) ___ __ __">
+                <span class="form__label-text">Номер телефона</span>
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__checkbox">
+                <input type="checkbox" class="form__checkbox-control" name="checkboxReg" required>
+                <span class="form__checkbox-icon"></span>
+                <span class="form__checkbox-text">
+                  Я ознакомился и согласен с <a href="agreement.html" class="form__checkbox-link">Пользовательским
+                    соглашением</a> и <a href="policy.html" class="form__checkbox-link">Политикой
+                    конфиденциальности</a>
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="form__submit form__submit--step-1">Продолжить</button>
+          </div>
+        </div>
+        <div class="form__step" id="form-step-2">
+          <div class="form__body">
+            <div class="form__logos">
+              <img class="form__logos-img" src="img/logos.svg" alt="">
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <input type="number" class="form__control" placeholder="Номер карты" required>
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <input type="text" class="form__control" placeholder="Имя на карте" required>
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <input type="text" class="form__control" placeholder="Срок действия" required>
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <input type="number" class="form__control" placeholder="CVV" required>
+              </label>
+            </div>
+            <button type="submit" class="form__submit">Продолжить</button>
+          </div>
+        </div>
+        <div class="form__foot">
+          <div class="form__security">
+            Безопасность работы подтверждена <span class="form__span">сертификатом PCI DSS</span>
+          </div>
+          <div class="form__logos-security">
+            <img class="form__logos-security-img" src="img/security/01.png"
+              srcset="img/security/01@2x.png 2x, img/security/01@3x.png 3x" alt="">
+            <img class="form__logos-security-img" src="img/security/02.png"
+              srcset="img/security/02@2x.png 2x, img/security/02@3x.png 3x" alt="">
+            <img class="form__logos-security-img" src="img/security/03.png"
+              srcset="img/security/03@2x.png 2x, img/security/03@3x.png 3x" alt="">
+            <img class="form__logos-security-img" src="img/security/04.png"
+              srcset="img/security/04@2x.png 2x, img/security/04@3x.png 3x" alt="">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--modalReg.end-->
+
+<!--script.begin-->
+<script src="../js/formReg.js?v=22"></script>
+<script src="../js/intlTelInput.min.js"></script>
+<script src="../js/intlTelInput.init.js"></script>
+<!--script.end-->

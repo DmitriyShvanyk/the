@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Проверьте вашу почту</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content='Проверьте вашу почту'>
+  <meta name="description" content='Проверьте вашу почту'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css?v=22">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!--navbar.begin-->
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <div class="navbar__left">
+          <a href="/" class="logo">
+            <img class="logo__image" src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="navbar__right">
+          <div class="navbar__text">Да, теперь я...</div>
+          <a data-fancybox data-type="ajax" data-src="ajax/modalReg.html" data-options='{"touch": false}' href="javascript:;"
+            class="btn navbar__btn-reg">
+            Хочу быть красивой
+          </a>
+          <a data-fancybox data-type="ajax" data-src="ajax/modalLogin.html" data-options='{"touch": false}' href="javascript:;"
+            class="btn btn--outline navbar__btn-login">
+            Войти <span class="navbar__btn-login-span">в аккаунт</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--navbar.end-->
+
+    <!--content.begin-->
+    <main>
+
+      <!--reset-password.begin-->
+      <section class="reset-password">
+        <div class="container reset-password__container">
+          <div class="reset-password__inner">
+            <h1 class="title reset-password__title">Проверьте вашу почту</h1>
+            <p class="reset-password__text">Если учетная запись Servicename связана с
+              <strong>first.lastname@email.com</strong>, вы должны получить письмо по электронной почте со ссылкой для
+              сброса пароля.</p>
+            <p class="reset-password__text">Проверьте папку "Входящие" и перейдите по ссылке сброса пароля.</p>
+            <a href="index.html" class="form__submit">Вернуться на страницу входа</a>
+          </div>
+        </div>
+      </section>
+      <!--reset-password.end-->
+
+    </main>
+    <!--content.end-->
+
+  </div>
+
+  <!--footer.begin-->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__inner">
+        <div class="footer__menu">
+          <a href="agreement.html" class="footer__menu-link">Пользовательское соглашение</a>
+          <a href="policy.html" class="footer__menu-link">Политика конфиденциальности</a>
+          <a href="mailto:support@easy-makeup.com" class="footer__menu-link">Поддержка</a>
+        </div>
+        <div class="footer__data">
+          <div class="footer__data-item">ООО "WorldOfBeauty"</div>
+          <div class="footer__data-item">121353, г. Москва, ул. Старская 11</div>
+          <div class="footer__data-item">ИНН 615143632612, ОГРН 1123821227212</div>
+        </div>
+        <div class="footer__copyright">Copyright © 2020 TheEasyMakeup</div>
+      </div>
+    </div>
+  </footer>
+  <!--footer.end--> 
+
+  <!--script.begin-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/scripts.js?v=22"></script>
+  <!--script.end-->
+
+</body>
+
+</html>

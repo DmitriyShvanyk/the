@@ -1,0 +1,47 @@
+<!--modalLogin.begin-->
+<div class="modal" id="modalLogin">
+  <div class="modal__inner">
+    <div class="modal__head">
+      <h2 class="title modal__title">
+        <a data-fancybox-close class="modal__close">Close me</a>
+        Вход
+      </h2>
+      <p class="modal__text">Введите вашу электронную почту и пароль чтобы войти в свой аккаунт.</p>
+    </div>
+    <div class="modal__body">
+      <div id="formLoginTarget"></div>
+      <form class="form" id="formLogin" action="#" method="POST">
+        <div class="form__head">
+          <div class="form__item form__item--email">
+            <label class="form__label">
+              <input type="email" name="emailLogin" class="form__control">
+              <span class="form__label-text">Электронная почта</span>
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label form__label--password">
+              <input type="password" id="password" name="passwordLogin" class="form__control form__control--password"
+                placeholder="">
+              <span class="form__label-text">Пароль</span>
+              <span class="form__password-i-eye"></span>
+            </label>
+          </div>
+          <div class="form__item form__item--flex">
+            <label class="form__checkbox">
+              <input type="checkbox" class="form__checkbox-control" name="checkboxLogin" required>
+              <span class="form__checkbox-icon"></span>
+              <span class="form__checkbox-text">Запомнить меня</span>
+            </label>
+            <a href="resetPassword.html" class="form__forgot-password-link">Забыли пароль</a>
+          </div>
+          <button type="submit" class="form__submit">ВОЙТИ</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--modalLogin.end-->
+
+<!--script.begin-->
+<script src="../js/formLogin.js?v=22"></script>
+<!--script.end-->
